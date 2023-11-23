@@ -1,11 +1,9 @@
-import { useState } from "react";
 import axios from "./api/axios";
 import { AxiosError, isAxiosError } from "axios";
 
 export default function App() {
-  const [email, setEmail] = useState("joseacebuche2@gmail.com");
-  const [password, setPassword] = useState("123");
-
+  const email = "joseacebuche2@gmail.com";
+  const password = "123";
   const login = async () => {
     try {
       const res = await axios.post("/login", { email, password });
