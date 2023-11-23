@@ -1,6 +1,5 @@
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
-const { encryptPassword } = require("../utils/EncryptAndDecrypt");
 
 //TODO: Gets one user only.
 const oneUser = async (req, res) => {

@@ -1,4 +1,7 @@
-const { decryptPassword } = require("../utils/EncryptAndDecrypt");
+const {
+  decryptPassword,
+  encryptPassword,
+} = require("../utils/EncryptAndDecrypt");
 const { PrismaClient } = require("@prisma/client");
 const createToken = require("../utils/createToken");
 const prisma = new PrismaClient();
