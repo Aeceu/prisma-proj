@@ -22,7 +22,7 @@ app.use(
 
 //* Routes
 app.use("/api/v1", AuthRouter);
-app.use("/api/v1", UserRouter);
+app.use("/api/v1", authenticateToken, UserRouter);
 app.use("/api/v1", authenticateToken, PostRouter);
 
 //* Listen
