@@ -15,7 +15,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://prisma-proj-client.vercel.app/",
+    origin: "https://prisma-proj-client.vercel.app",
     credentials: true,
   })
 );
